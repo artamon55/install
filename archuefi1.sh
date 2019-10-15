@@ -82,4 +82,5 @@ systemctl enable NetworkManager
 
 echo 'Установка завершена! Перезагрузите систему.'
 exit
+umount /mnt/{boot,home,}
 
