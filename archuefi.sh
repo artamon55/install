@@ -32,4 +32,4 @@ pacstrap /mnt base base-devel linux linux-firmware nano dhcpcd
 echo 'Настройка системы'
 genfstab -pU /mnt >> /mnt/etc/fstab
 
-arch-chroot /mnt sh -c "$(curl -fsSL https://github.com/artamon55/install/blob/master/archuefi1.sh)"
+arch-chroot /mnt sh -c "$(curl -fsSL git.io/Je8iw)"
