@@ -23,13 +23,13 @@ echo 'FONT=cyr-sun16' >> /etc/vconsole.conf
 echo 'Создадим загрузочный RAM диск'
 mkinitcpio -p linux
 
-#echo 'Устанавливаем загрузчик'
-#pacman -Syy
-#pacman -S grub efibootmgr --noconfirm 
-#grub-install /dev/sda
+echo 'Устанавливаем загрузчик'
+pacman -Syy
+pacman -S grub efibootmgr --noconfirm 
+grub-install /dev/sda
 
-#echo 'Обновляем grub.cfg'
-#grub-mkconfig -o /boot/grub/grub.cfg
+echo 'Обновляем grub.cfg'
+grub-mkconfig -o /boot/grub/grub.cfg
 
 echo 'Ставим программу для Wi-fi'
 pacman -S dialog wpa_supplicant --noconfirm 
