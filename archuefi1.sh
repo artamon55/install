@@ -28,6 +28,8 @@ pacman -Syy
 pacman -S grub efibootmgr --noconfirm 
 grub-install /dev/sda
 
+pacman -S os-prober mtools fuse
+
 echo 'Обновляем grub.cfg'
 grub-mkconfig -o /boot/grub/grub.cfg
 
